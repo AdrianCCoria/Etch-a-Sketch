@@ -6,8 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
 </head>
 <body>
-    
+    <div class="container">
+    <h1 class="title">Etch-a-Sketch</h1>
+
+    <div class="controls">
+        <label for="grid-size">Grid Size:</label>
+        <input type="range" id="grid-size" min="1" max="50" value="16">
+        <span id="grid-size-value">16</span>
+    </div>
+
+    <div id="grid-container" class="grid-container">
+        <!-- Generate grid dynamically using JS -->
+    </div>
+    </div>
+    <script src="eas.js"></script>
 </body>
 </html>
